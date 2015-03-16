@@ -214,7 +214,6 @@ void Terminal::moveTerminalToLine(int line)
             m_remoteLine++;
         }
     } else {
-        if (!m_consoleMode)
-            m_output->write("\r");
+        m_output->write("\r");
     }
 }
